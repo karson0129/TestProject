@@ -1,10 +1,13 @@
 package com.github.myapplication.LazyFragment
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.startActivity
 import androidx.fragment.app.Fragment
 import kotlin.math.E
 import kotlin.math.log
@@ -103,6 +106,7 @@ abstract class LazyFragment :Fragment(){
     //构造函数
     companion object{
        private var Tag = "LazyFragment"
+
     }
 
 }
