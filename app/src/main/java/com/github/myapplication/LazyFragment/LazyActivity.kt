@@ -38,7 +38,7 @@ class LazyActivity : AppCompatActivity(),View.OnClickListener {
         list.add(MyFragment.newInstance("There"))
         list.add(MyFragment.newInstance("Four"))
         list.add(MyFragment.newInstance("Five"))
-        
+
         return list
     }
 
