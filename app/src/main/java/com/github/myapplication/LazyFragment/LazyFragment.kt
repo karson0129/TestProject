@@ -27,9 +27,7 @@ abstract class LazyFragment :Fragment(){
     private var isCurrentVisibleState:Boolean = false
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-       if (viewRoot == null){
            viewRoot = inflater.inflate(getLayoutRes(),container,false)
-       }
         initView(viewRoot)
         //这里表示ViewRoot已经创创建完成
         isViewCreated = true
@@ -80,14 +78,14 @@ abstract class LazyFragment :Fragment(){
     /** =======================================
      *            触发停止加载网络
      *========================================= */
-    public fun onFragmentLoadStop(){
+    public open fun onFragmentLoadStop(){
 
     }
 
     /** =======================================
      *               触发加载网络
      *========================================= */
-    public fun onFragmentLoad(){
+    public open fun onFragmentLoad(){
 
     }
 
