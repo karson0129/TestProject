@@ -23,6 +23,12 @@
                     android:id="@+id/lazy"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:gravity="center"
+                android:text="代理模式学习"
+                android:id="@+id/proxy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
