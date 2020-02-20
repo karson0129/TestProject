@@ -5,6 +5,9 @@ import java.lang.reflect.Method
 import java.lang.reflect.Proxy
 import java.util.*
 
+/**
+ * 代理模式（动态）
+ * */
 class Mall :InvocationHandler{
 
     var obj: Object? = null
@@ -14,7 +17,7 @@ class Mall :InvocationHandler{
              obj?.`class`?.interfaces,this@Mall)
     }
 
-    override fun invoke(any: Any?, method: Method?, args: Array<out Any>?): Any {
+    override fun invoke(any: Any?, method: Method?, args: Array<out Any>?): Any? {
         println("before http request--->$args")
         yitialong()
 //        val invoke = method?.invoke(obj, *(p2))
