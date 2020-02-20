@@ -75,6 +75,9 @@
       </method>
     </configuration>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
